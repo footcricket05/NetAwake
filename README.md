@@ -70,5 +70,3 @@ We welcome contributions to this project. If you'd like to get involved, please 
 ## License 📜
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and distribute it as needed.
-
-For more information, visit our [GitHub repository](https://github.com/footcricket05/Wake-on-Lan).
