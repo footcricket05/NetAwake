@@ -1,11 +1,10 @@
-# NetAwake: Network-Powered PC Wake-Up Utility
+# NetAwake: Network-Powered PC Wake-Up Utility ⏰
 
-
-## Overview
+## Overview 📄
 
 NetAwake is a powerful networking utility that allows you to remotely power on a PC over the Internet using the Wake-On-LAN protocol. This technology enables you to wake up a computer from a powered-down or sleep state, making it an invaluable tool for IT professionals, home network enthusiasts, and anyone looking to save time and energy.
 
-## Table of Contents
+## Table of Contents 📑
 
 - [Principle of Operation](#principle-of-operation)
 - [Magic Packet Structure](#magic-packet-structure)
@@ -14,7 +13,7 @@ NetAwake is a powerful networking utility that allows you to remotely power on a
 - [Contributing](#contributing)
 - [License](#license)
 
-## Principle of Operation
+## Principle of Operation 💡
 
 NetAwake operates by sending a specially crafted network message known as a "magic packet" to the target computer. The magic packet is designed to awaken the target computer from a low-power state, such as being powered down. Here's how it works:
 
@@ -28,11 +27,11 @@ NetAwake operates by sending a specially crafted network message known as a "mag
 
 NetAwake reduces power consumption in powered-down computers, as it only requires the network interface to stay on in low-power mode. Disabling Wake-on-LAN when not needed can further reduce standby power consumption.
 
-## Magic Packet Structure
+## Magic Packet Structure 📦
 
 The magic packet is a broadcast frame that contains 6 bytes of all 255 (FF FF FF FF FF FF in hexadecimal), followed by sixteen repetitions of the target computer's 48-bit MAC address, resulting in a total of 102 bytes. It can be sent using various network and transport-layer protocols, often as a UDP datagram to port 0, 7, or 9, or directly over Ethernet as EtherType 0x0842.
 
-### Limitations
+### Limitations 🛑
 
 NetAwake has some limitations that are important to consider:
 
@@ -46,7 +45,7 @@ NetAwake has some limitations that are important to consider:
 
 5. **Wireless Interface Compatibility**: Most 802.11 wireless interfaces do not maintain a link in low-power states, making them unable to receive a magic packet.
 
-## Getting Started
+## Getting Started 🚀
 
 To get started with NetAwake, you'll need to ensure that your target computer and network equipment support Wake-on-LAN. While there may not be specific documentation provided for this project, you can follow these general steps:
 
@@ -64,11 +63,11 @@ Please note that while this project may not provide specific documentation, the 
 
 For any project-specific questions or issues, you can refer to the project's GitHub repository and its community for support.
 
-## Contributing
+## Contributing 🤝
 
 We welcome contributions to this project. If you'd like to get involved, please see our [contribution guidelines](CONTRIBUTING.md) for more information.
 
-## License
+## License 📜
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and distribute it as needed.
 
